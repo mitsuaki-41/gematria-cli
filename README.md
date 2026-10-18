@@ -180,6 +180,7 @@ gematria-cli -c prime -f list.txt -a "the underdog of" -n 37
 
 ```sh
 cargo uninstall gematria-cli
+rm gematria-cli
 ```
 
 ## License
