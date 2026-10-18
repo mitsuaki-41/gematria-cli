@@ -67,6 +67,8 @@ gematria-cli [OPTIONS]
 gematria-cli -c simple -t gematria
 ```
 
+The output will be as follows: `74`
+
 ### Calculate a phrase with one cipher
 
 ```sh
@@ -173,14 +175,6 @@ In this mode, `--number` filters by the digit sum of that product:
 ```sh
 gematria-cli -c prime -f list.txt -a "the underdog of" -n 37
 ```
-
-## Input processing and calculations
-
-- Words are extracted from ASCII letters and digits; other characters act as separators.
-- Letter matching is case-insensitive.
-- For a single word, the program prints its value.
-- For multiple words supplied with `--text`, the program multiplies the individual word values. It prints the product and the digit sum of the product.
-- The digit sum is a single addition pass, not a repeated digital-root reduction. For example, the digit sum of `444` is `12`, not `3`.
 
 ## Uninstall
 
