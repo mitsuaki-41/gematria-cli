@@ -256,7 +256,7 @@ fn run(args: Args) -> Result<(), Box<dyn Error>> {
                 if words.len() > 1 {
                     let digits_sum = sum_digits(product);
 
-                    println!("{name}: {digits_sum} = {product} = {}", terms.join(" × "));
+                    println!("{name}: {digits_sum}: {product} = {}", terms.join(" × "));
 			    } else {
 					println!("{name}: {product}");
 				}
