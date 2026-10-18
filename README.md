@@ -185,6 +185,13 @@ cargo uninstall gematria-cli
 rm -r gematria-cli
 ```
 
+Windows:
+
+```cmd
+cargo uninstall cipher-finder-cli
+rmdir /s cipher-finder-cli
+```
+
 ## License
 
 MIT
