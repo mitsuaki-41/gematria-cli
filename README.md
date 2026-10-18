@@ -19,6 +19,7 @@ Install Rust on your system: https://rust-lang.org/tools/install/
 ## Build
 
 Linux, Mac, Windows:
+
 Clone the repository, enter the project directory, and build the release binary:
 
 ```sh
