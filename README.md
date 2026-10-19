@@ -190,8 +190,8 @@ rm -r gematria-cli
 Windows:
 
 ```cmd
-cargo uninstall cipher-finder-cli
-rmdir /s cipher-finder-cli
+cargo uninstall gematria-cli
+rmdir /s gematria-cli
 ```
 
 ## License
