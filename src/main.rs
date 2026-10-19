@@ -1,4 +1,4 @@
-use clap::{CommandFactory, Parser, ValueEnum};
+use clap::{Parser, ValueEnum};
 use std::error::Error;
 use std::fs;
 use std::path::PathBuf;
@@ -44,7 +44,10 @@ enum PalindromeCipher {
     gematria-cli -c simple -f list.txt -n 74
     geamtria-cli -c claude -f list.txt -a 'the' -n 31
     gematria-cli -p -f list.txt
-    gematria-cli -a gematria -c simple -f list.txt -n 74"
+    gematria-cli -a gematria -c simple -f list.txt -n 74",
+    verbatim_doc_comment,
+    next_line_help = true,
+    arg_required_else_help = true
 )]
 
 struct Args {
@@ -382,17 +385,10 @@ fn run(args: Args) -> Result<(), Box<dyn Error>> {
         return Ok(());
     }
 
-    Err("Specify either --word or --file.".into())
+    Err("Specify either --text or --file.".into())
 }
 
 fn main() {
-    if std::env::args_os().len() == 1 {
-        let mut command = Args::command();
-        command.print_help().unwrap();
-        println!();
-        return;
-    }
-
     let args = Args::parse();
 
     if let Err(error) = run(args) {
