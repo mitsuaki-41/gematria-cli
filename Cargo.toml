@@ -1,6 +1,6 @@
 [package]
 name = "gematria-cli"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A Command-line gematria calculator written in Rust which also includes minor ciphers method based on Claude Shannon’s perfect-pangram, and filtering words from a text file is available."
 authors = [ "mitsuaki-41" ]
