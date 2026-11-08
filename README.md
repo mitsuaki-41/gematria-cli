@@ -79,7 +79,7 @@ gematria-cli -c simple -t "computer technology"
 
 The output will be as follows:
 
-    18: 14508 = cumputer(117) × technology(124)
+    18: 14508: cumputer(117) × technology(124)
 
 Each word is evaluated separately. When the input contains multiple words, the program multiplies their values and prints the product, its digit sum, and the individual word values.
 
